@@ -147,110 +147,121 @@ const InvoiceForm = () => {
         </div>
 
         {/* Absenderdaten */}
-        <h3>Absender</h3>
-        <div className="row">
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Name"
-              value={formData.sender.name}
-              onChange={(e) => handleAddressChange('sender', 'name', e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Straße"
-              value={formData.sender.street}
-              onChange={(e) => handleAddressChange('sender', 'street', e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="PLZ"
-              value={formData.sender.postalCode}
-              onChange={(e) => handleAddressChange('sender', 'postalCode', e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Ort"
-              value={formData.sender.city}
-              onChange={(e) => handleAddressChange('sender', 'city', e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Land"
-              value={formData.sender.country}
-              onChange={(e) => handleAddressChange('sender', 'country', e.target.value)}
-            />
-          </div>
-        </div>
+<h3>Absender</h3>
+<div className="row">
+  <div className="col-12 col-md mb-2">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Name"
+      value={formData.sender.name}
+      onChange={(e) => handleAddressChange('sender', 'name', e.target.value)}
+    />
+  </div>
+  <div className="col-12 col-md mb-2">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Straße"
+      value={formData.sender.street}
+      onChange={(e) => handleAddressChange('sender', 'street', e.target.value)}
+    />
+  </div>
+  <div className="col-12 col-md mb-2">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="PLZ"
+      value={formData.sender.postalCode}
+      onChange={(e) => handleAddressChange('sender', 'postalCode', e.target.value)}
+    />
+  </div>
+  <div className="col-12 col-md mb-2">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Ort"
+      value={formData.sender.city}
+      onChange={(e) => handleAddressChange('sender', 'city', e.target.value)}
+    />
+  </div>
+  <div className="col-12 col-md">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Land"
+      value={formData.sender.country}
+      onChange={(e) => handleAddressChange('sender', 'country', e.target.value)}
+    />
+  </div>
+</div>
 
-        {/* Empfängerdaten */}
-        <h3 className="mt-4">Empfänger</h3>
-        <div className="row">
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Name"
-              value={formData.receiver.name}
-              onChange={(e) => handleAddressChange('receiver', 'name', e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Straße"
-              value={formData.receiver.street}
-              onChange={(e) => handleAddressChange('receiver', 'street', e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="PLZ"
-              value={formData.receiver.postalCode}
-              onChange={(e) => handleAddressChange('receiver', 'postalCode', e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Ort"
-              value={formData.receiver.city}
-              onChange={(e) => handleAddressChange('receiver', 'city', e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Land"
-              value={formData.receiver.country}
-              onChange={(e) => handleAddressChange('receiver', 'country', e.target.value)}
-            />
-          </div>
-        </div>
+{/* Empfängerdaten */}
+<h3 className="mt-4">Empfänger</h3>
+<div className="row">
+  <div className="col-12 col-md mb-2">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Name"
+      value={formData.receiver.name}
+      onChange={(e) => handleAddressChange('receiver', 'name', e.target.value)}
+    />
+  </div>
+  <div className="col-12 col-md mb-2">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Straße"
+      value={formData.receiver.street}
+      onChange={(e) => handleAddressChange('receiver', 'street', e.target.value)}
+    />
+  </div>
+  <div className="col-12 col-md mb-2">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="PLZ"
+      value={formData.receiver.postalCode}
+      onChange={(e) => handleAddressChange('receiver', 'postalCode', e.target.value)}
+    />
+  </div>
+  <div className="col-12 col-md mb-2">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Ort"
+      value={formData.receiver.city}
+      onChange={(e) => handleAddressChange('receiver', 'city', e.target.value)}
+    />
+  </div>
+  <div className="col-12 col-md">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Land"
+      value={formData.receiver.country}
+      onChange={(e) => handleAddressChange('receiver', 'country', e.target.value)}
+    />
+  </div>
+</div>
 
         {/* Rechnungspositionen */}
         <h3 className="mt-4">Rechnungspositionen</h3>
+        <div className="row mb-3">
+          <div className="col-8">
+            Positionsbeschreibung
+          </div>
+          <div className="col-2">
+            Menge
+          </div>
+          <div className="col-2">
+            Preis in €
+          </div>
+        </div>
         {formData.items.map((item, index) => (
           <div className="row mb-3" key={index}>
-            <div className="col">
+            <div className="col-8">
               <input
                 type="text"
                 className="form-control"
@@ -259,7 +270,7 @@ const InvoiceForm = () => {
                 onChange={(e) => handleItemChange(index, 'description', e.target.value)}
               />
             </div>
-            <div className="col">
+            <div className="col-2">
               <input
                 type="number"
                 className="form-control"
@@ -268,7 +279,7 @@ const InvoiceForm = () => {
                 onChange={(e) => handleItemChange(index, 'quantity', e.target.value)}
               />
             </div>
-            <div className="col">
+            <div className="col-2">
               <input
                 type="number"
                 className="form-control"
