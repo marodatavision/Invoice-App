@@ -1,0 +1,25 @@
+{
+    "vatRate": 19,
+    "paymentTerms": "Zahlbar innerhalb von 14 Tagen ohne Abzug.",
+    "discountDetails": "2 % Skonto bei Zahlung innerhalb von 10 Tagen.",
+    "bankDetails": {
+      "accountHolder": "Musterfirma GmbH",
+      "iban": "DE12345678901234567890",
+      "bic": "GENODEF1XXX",
+      "bankName": "Musterbank"
+    },
+    "taxDetails": {
+      "vatId": "DE123456789",
+      "taxNumber": "123/456/78901"
+    },
+    "companyInfo": {
+      "name": "Musterfirma GmbH",
+      "street": "Musterstraße 1",
+      "postalCode": "12345",
+      "city": "Musterstadt",
+      "country": "Deutschland",
+      "phone": "+49 123 456 7890", 
+      "homepage": "www.musterfirma.de" 
+    }
+  }
+  
