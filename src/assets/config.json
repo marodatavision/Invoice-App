@@ -20,6 +20,8 @@
       "country": "Deutschland",
       "phone": "+49 123 456 7890", 
       "homepage": "www.musterfirma.de" 
-    }
+    },
+    "encryptedPassword": "U2FsdGVkX18iqjI4XTJC2M1vvlUL57NGmupgJJwXHRMdcOzYi3caN3Effvw7ymi3IQH4uDDw6T/yGAPJlZu3w3MEZM6p0eG8iEEnX/Ry4+t09X0//Na//ftX8sPgfLo85ia4ty4MaPUuoV5EIPCwpv6NKWc3VBkeK+ol9pVFeQY=",
+    "encryptionKey": "G&K-Holzrechnung"
   }
   
