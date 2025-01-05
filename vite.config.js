@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  base: '/Invoice-App/',
   plugins: [
     react(),
     VitePWA({
@@ -25,7 +26,7 @@ export default defineConfig({
             type: 'image/png',
           },
         ],
-        start_url: '/',
+        start_url: '/Invoice-App/',
         display: 'standalone',
       },
     }),
