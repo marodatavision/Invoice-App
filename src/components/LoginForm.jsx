@@ -9,10 +9,7 @@ const LoginForm = ({ onLoginSuccess }) => {
   const handleLogin = () => {
     try {
       // Entschlüssele das gespeicherte Passwort aus der config.json
-      const decryptedPassword = CryptoJS.AES.decrypt(
-        config.encryptedPassword,
-        config.encryptionKey
-      ).toString(CryptoJS.enc.Utf8);
+      const decryptedPassword = config.decryptedPassword;
 
       // Entschlüssele das eingegebene Token
       const inputPassword = CryptoJS.AES.decrypt(token, config.encryptionKey).toString(
